@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-piwik"
+    version="1.0.0">
+    <name>Cordova Plugin Piwik</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+ 
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/plugin.js" name="PiwikCustomPlugin">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.piwik -->
+        <clobbers target="piwik" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="piwik">
+          <param name="android-package" value="com.piwik.CordovaPiwik" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+	  
+	  <source-file src="src/android/com/piwik/CordovaPiwik.java" target-dir="src/com/piwik/" />
+      <source-file src="src/android/com/piwik/PiwikConstant.java" target-dir="src/com/piwik/" />
+	  <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="PiwikCustomPlugin">
+            <runs/>
+            <clobbers target="piwik" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="piwik">
+                <param name="ios-package" value="PiwikNativeiOS" onload="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PiwikNativeiOS.m" />
+        <header-file src="src/ios/PiwikNativeiOS.h" />
+        
+        <header-file src="src/ios/PiwikTracker/PiwikTracker.h" />
+        <header-file src="src/ios/PiwikTracker/PiwikDebugDispatcher.h" />
+        
+
+    </platform>
+</plugin>

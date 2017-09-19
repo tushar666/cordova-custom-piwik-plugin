@@ -1,0 +1,54 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+        "spec": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+        "type": "directory"
+      },
+      "/Users/tusharrevandkar/Documents/Projects/ExperiaServiceApp/Code/UAT/ServiceAppIonicUAT/trunk/node_modules"
+    ]
+  ],
+  "_from": "../../../../../../../Downloads/Piwik/cordova-plugin-piwik",
+  "_id": "cordova-plugin-piwik@1.0.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-piwik",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+    "spec": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../../../../../../../Downloads/Piwik/cordova-plugin-piwik",
+  "_shasum": "f1775626124185d69e295fc3595efbbfe105c51c",
+  "_shrinkwrap": null,
+  "_spec": "/Users/tusharrevandkar/Downloads/Piwik/cordova-plugin-piwik",
+  "_where": "/Users/tusharrevandkar/Documents/Projects/ExperiaServiceApp/Code/UAT/ServiceAppIonicUAT/trunk/node_modules",
+  "cordova": {
+    "id": "cordova-plugin-piwik",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "A cordova plugin for a piwik analytics",
+  "devDependencies": {},
+  "name": "cordova-plugin-piwik",
+  "optionalDependencies": {},
+  "readme": "Cordova Plugin Piwik\n======\nThis is a cordova plugin for building piwik analytics on iOS and Android.\n",
+  "readmeFilename": "README.md",
+  "version": "1.0.0"
+}
